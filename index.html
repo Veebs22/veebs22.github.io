@@ -30,6 +30,7 @@
           <img src="./images/enviroment_14.png" class="carousel-image">
           <img src="images/enviroment_13.png" alt="The Bad ending for my game 'Queen Of The Hill'" class="carousel-image">
           <img src="images/enviroment_9.png" alt="A giant Human Eye Painted by yours truly in photoshop" class="carousel-image">
+          <img src="images/More_upgrades.PNG" alt="some upgrades!" class="carousel-image">
         </div>
       </div>
     </section>
@@ -47,9 +48,11 @@
       Aside from the Processing library for rendering, every facet of this game was made by me and me alone.  
       The goal was to experience the entire lifecycle of a game, from start to finish, from scratch.  
       <br>
-        <a href="https://store.steampowered.com/app/2946810/Queen_Of_The_Hill/" target ="_blank" Style = "padding: 5px; margin: 5px; border-radius: 8px; color: white; background-color: #23471D;">
-          > The demo is available on Steam for free.
-        </a>
+      <a href="https://store.steampowered.com/app/2946810/Queen_Of_The_Hill/" 
+      target="_blank" 
+      class="steam-button">
+     🎮 Play the Free Demo on Steam
+   </a>
       <br>
       Getting the Steam API to work without a game engine has been challenging, so currently, it only runs on Windows.  
       I apologize for any inconvenience.
@@ -74,10 +77,46 @@
     <p>- Developed performant algorithms for everything from collision detection to physics simulations and line-of-sight checks.</p>
     
     <p>- Composed 10 original music tracks, ranging from moody ambience to epic boss themes.</p>
-    <button id="audio-btn">▶ Play</button>
-<audio id="sample-audio" src="./audio/your-sample.mp3"></audio>
-    
+<div style ="display: flex; justify-content: space-evenly;">
+      <div class="audio-player">
+          <p>Casual Gameplay</p>
+          <button class="audio-btn">▶ Play</button>
+          <audio src="./audio/music/ANThem.wav"></audio>
+        </div>
+      <div class="audio-player">
+          <p>Moody Ambience</p>
+          <button class="audio-btn">▶ Play</button>
+          <audio src="./audio//music/synthCave.wav"></audio>
+      </div>
+      <div class="audio-player">
+          <p>Boss Theme</p>
+          <button class="audio-btn">▶ Play</button>
+          <audio src="./audio/music/BossMusic_6.wav"></audio>
+      </div>
+      <div class="audio-player">
+          <p>Credits</p>
+          <button class="audio-btn">▶ Play</button>
+          <audio src="./audio/music/creditsAntfarm.wav"></audio>
+      </div>
+</div>
     <p>- Recorded and sampled dozens of sound effects, while developing the audio playback system.</p>
+    <div style ="display: flex; justify-content: space-evenly;">
+      <div class="audio-player">
+          <p>"human" words</p>
+          <button class="audio-btn">▶ Play</button>
+          <audio src="./audio//sfx/DaveSpeech.wav"></audio>
+        </div>
+      <div class="audio-player">
+          <p>Finding a secret!</p>
+          <button class="audio-btn">▶ Play</button>
+          <audio src="./audio/sfx/SecretBells.wav"></audio>
+      </div>
+      <div class="audio-player">
+          <p>Squishing a bug</p>
+          <button class="audio-btn">▶ Play</button>
+          <audio src="./audio/sfx/squeltch.wav"></audio>
+      </div>
+</div>
     
     <p>- Documented the entire development process using GitHub.</p>
     
