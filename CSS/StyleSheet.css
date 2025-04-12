@@ -183,12 +183,13 @@ mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, tran
 
 }
 .projectBox img{
-   margin: auto;
+   
     max-width:100%;
     object-fit: contain;
 
 }
 .projects p{
+    align-self: start;
     border-radius: 8px;
     max-width:100%;
     padding: 1rem;
