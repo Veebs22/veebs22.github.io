@@ -8,6 +8,7 @@
   <script src="./Scripts/Carousel.js"></script>
   <script src="./Scripts/Animation.js"></script>
   <script src="./Scripts/Wander.js"></script>
+  <script src="./Scripts/Audio.js"></script>
 </head>
 <body>
   <header class="hero" style="  background-image: url('images/enviroment_9.png');">
@@ -32,8 +33,9 @@
         </div>
       </div>
     </section>
-   <h1 class = "sectionTitle">MY PROJECTS</h1>
+   <h1 class = "sectionTitle" style ="background-image: url(./images//mysterious_header.PNG);overflow: visible; padding: 10px;">MY PROJECTS</h1>
 <section class="projects">
+ 
   <div class ="projectBox">
     <img src ="images/QueenOfTheHillMain.png">
     <h3>My solo indie dev project: Queen of The Hill</h3>
@@ -57,16 +59,23 @@
     <p>- Wrote over 20,000 lines of Java code.</p>
     
     <p>- Created all the artwork in Photoshop, including 8 full-screen digital paintings and all sprite assets.</p>
-    
+
     <p>- Designed and iterated on game mechanics, organizing playtests to refine a fun and engaging gameplay loop.</p>
     
     <p>- Animated particle effects, walk cycles, enemies, and UI elements.</p>
-    
+    <div class="animation-Frame" Style ="position: relative;">
+      <img src="./images/Animations/FastEnemy/WC_0.png" />
+      <img src="./images/Animations/FastEnemy/WC_1.png" />
+      <img src="./images/Animations/FastEnemy/WC_2.png" />
+      <img src="./images/Animations/FastEnemy/WC_3.png" />
+    </div>
     <p>- Programmed a life-like simulation of an ant colony, leveraging emergent behaviors.</p>
     
     <p>- Developed performant algorithms for everything from collision detection to physics simulations and line-of-sight checks.</p>
     
     <p>- Composed 10 original music tracks, ranging from moody ambience to epic boss themes.</p>
+    <button id="audio-btn">▶ Play</button>
+<audio id="sample-audio" src="./audio/your-sample.mp3"></audio>
     
     <p>- Recorded and sampled dozens of sound effects, while developing the audio playback system.</p>
     
