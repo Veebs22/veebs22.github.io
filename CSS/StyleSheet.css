@@ -88,7 +88,26 @@ background-attachment: fixed;
 mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
   }
 
+.linksBox{
+display: flex;
+background: linear-gradient(to right, #0d160d 10%, #2d5a25 33%,#2d5a25 66%, #0d160d 90%);
+flex-direction: row;
+justify-content: center;
 
+
+}
+.linksBox img{
+  background-color:#2d5a25;
+  width: 80px; height: 80px;
+  border-radius: 80px;
+  margin-inline: 20px;
+  padding: 20px;
+transition-duration: 200ms;
+}
+.linksBox img:hover{
+ scale: 1.7;
+  
+}
 
   .carousel {
     position: relative;
@@ -213,7 +232,6 @@ mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, tran
 
 }
 .projectBox_1 p{
-    align-self: start;
     border-radius: 8px;
     max-width:100%;
     padding: 1rem;
@@ -226,7 +244,6 @@ mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, tran
    line-height: 2rem;
 }
 .projectBox_2 p{
-  align-self: start;
   border-radius: 8px;
   max-width:100%;
   padding: 1rem;
