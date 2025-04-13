@@ -1,5 +1,5 @@
 body {
-    font-family: sans-serif;
+    font-family: Verdana;
     margin: 0;
     padding: 0;
     background: #534b4b;
@@ -246,6 +246,7 @@ mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, tran
     margin: 1rem ;
   }
   .audio-player p {
+    text-align: center;
     background: none;
     margin: 0;
     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
