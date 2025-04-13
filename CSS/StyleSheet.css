@@ -171,8 +171,8 @@ mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, tran
     display: flex;
     justify-content:space-around;
 }
-.projectBox{
-    background-color: #333;
+.projectBox_1{
+    background-color: #253b19;
     border-radius: 8px;
     padding: 10px;
     max-width: 700px;
@@ -185,13 +185,33 @@ mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, tran
     background-position: center;
     background-attachment: fixed;
 }
-.projectBox img{
+.projectBox_2{
+  background-color: #030410;
+  border-radius: 8px;
+  padding: 10px;
+  max-width: 700px;
+  margin-top: 40px;
+  object-fit: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.projectBox_1 img{
    
     max-width:100%;
     object-fit: contain;
 
 }
-.projects p{
+.projectBox_2 img{
+   
+  max-width:100%;
+  object-fit: contain;
+
+}
+.projectBox_1 p{
     align-self: start;
     border-radius: 8px;
     max-width:100%;
@@ -204,6 +224,20 @@ mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, tran
     text-wrap: auto;
    line-height: 2rem;
 }
+.projectBox_2 p{
+  align-self: start;
+  border-radius: 8px;
+  max-width:100%;
+  padding: 1rem;
+  background-color: rgb(26 26 26);
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  text-align: left;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  text-wrap: auto;
+ line-height: 2rem;
+}
+
 .audio-player {
     display: flex;
     flex-direction: column;
