@@ -2,8 +2,9 @@ body {
     font-family: Verdana;
     margin: 0;
     padding: 0;
-    background: #0d160d;
     color: #ffffff;
+    background-attachment: fixed;
+    background: #0d160d;
   }
     .hero {
   height: 60vh;
