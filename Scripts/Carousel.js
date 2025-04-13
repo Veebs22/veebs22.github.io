@@ -23,6 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   
     updateCarousel();
-    setInterval(nextSlide, 8000); // Every 8 seconds
+    setInterval(nextSlide, 5000); // Every 5 seconds
   });
   
