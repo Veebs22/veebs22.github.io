@@ -259,3 +259,7 @@ mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, tran
     background-color: #1b3513;
     transform: translateY(0);
   }
+  .pixel-art {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+  }
