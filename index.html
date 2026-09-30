@@ -23,27 +23,22 @@
       <h2>Hello! I'm Jackson, and this is a collection of my recent work. <br>Scroll down, explore, and make yourself at home!</h2>
     </section>
 
-    <section class="gallery">
-      <div class="carousel">
-        <div class="carousel-track">
-          <img src="./images/rere_screenshot_combat.PNG" class="carousel-image" alt="Re-Re-Entry showcase">
-          <img src="./images/QueenOfTheHill.png" class="carousel-image" alt="Queen of the Hill showcase">
-          <img src="./images/screenshot_rere.PNG" class="carousel-image" alt="Re-Re-Entry scene">
-          <img src="./images/enviroment_14.png" class="carousel-image" alt="Environment art">
-          <img src="images/enviroment_13.png" alt="The Bad ending for my game 'Queen Of The Hill'" class="carousel-image">
-          <img src="images/enviroment_9.png" alt="A giant Human Eye Painted by yours truly in photoshop" class="carousel-image">
-          <img src="images/More_upgrades.PNG" alt="some upgrades!" class="carousel-image">
-        </div>
-      </div>
-    </section>
-
     <h1 class="sectionTitle" style="background-image: url(./images//mysterious_header.PNG); overflow: visible; padding: 10px;">MY PROJECTS</h1><br>
 
-    <nav class="project-nav" aria-label="Project navigation">
-      <button class="project-nav-btn active" data-project="queen">Queen of the Hill</button>
-      <button class="project-nav-btn" data-project="rereentry">Re-Re-Entry</button>
-      <button class="project-nav-btn" data-project="intodeep">In Too Deep</button>
-    </nav>
+    <section class="gallery project-selector" aria-label="Project selector">
+      <button class="project-selector-item active" data-project="queen" type="button">
+        <img src="./images/QueenOfTheHillMain.png" alt="Queen of the Hill project preview">
+        <span>Queen of The Hill</span>
+      </button>
+      <button class="project-selector-item" data-project="rereentry" type="button">
+        <img src="./images/rere_screenshot_combat.PNG" alt="Re-Re-Entry project preview">
+        <span>Re-Re-Entry</span>
+      </button>
+      <button class="project-selector-item" data-project="intodeep" type="button">
+        <img src="./images/Second%20Game/Monster_ingame.jpg" alt="In Too Deep project preview">
+        <span>In Too Deep</span>
+      </button>
+    </section>
 
     <section class="project-showcase">
       <article id="project-queen" class="project-panel active">
@@ -146,7 +141,9 @@
             <img src="images/pixel-Art/SmallEnemy_Death.png" class="pixel-art" style="width: 100%">
             <p>I also programmed and refined the Shotgun and Gattling gun weapons for the player.</p>
             <p>I implemented UX enhancements like animated menus, scene transitions, camera shake, and enemy damage/tilt visuals.</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/zslrHA5Wtjw?rel=0&modestbranding=1&controls=1&showinfo=0" title="YouTube video player" frameborder="0" allow="encrypted-media;" allowfullscreen></iframe>
+            <div class="reentry-video-frame">
+              <iframe src="https://www.youtube-nocookie.com/embed/zslrHA5Wtjw?rel=0&controls=1&playsinline=1" title="Re-Re-Entry gameplay video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
             <p>
               The main menu and victory screens are my handiwork as well.
               The spinning trophies are animated by me, you also might catch that the final score tally is inspired by my love for the 'LEGO Star Wars' games.
@@ -159,7 +156,7 @@
 
       <article id="project-intodeep" class="project-panel">
         <div class="project-card upcoming-card">
-          <img src="images/QueenOfTheHillMain.png" alt="In Too Deep placeholder cover art" style="filter: grayscale(1);">
+          <img src="./images/Second%20Game/Gameplay_whiteboard.jpg" alt="In Too Deep concept art" style="filter: saturate(1.05);">
           <div class="project-content">
             <span class="eyebrow">Newest Release</span>
             <h3>In Too Deep</h3>
@@ -173,16 +170,53 @@
                In Too Deep is a horror game that sees the player trapped in a submarine, wherein they must listen for audio cues, stay on top of leaks, and repel sea monsters to survive.
             </p>
 
-            <div class="video-placeholder">
-              <strong>Video Demo Placeholder</strong>
-              <span>Insert a gameplay or trailer video here.</span>
+            <div class="concept-art-section">
+              <h4>Concept Art</h4>
+              <div class="media-grid">
+                <div class="placeholder-media lightbox-trigger">
+                  <img src="./images/Second%20Game/concept_art/depth_camera.png" alt="Depth camera concept art">
+                  <small>Depth camera and sonar interface</small>
+                </div>
+                <div class="placeholder-media lightbox-trigger">
+                  <img src="./images/Second%20Game/concept_art/interior.png" alt="Submarine interior concept art">
+                  <small>Submarine interior layout</small>
+                </div>
+                <div class="placeholder-media lightbox-trigger">
+                  <img src="./images/Second%20Game/concept_art/Side view.png" alt="Side view concept art">
+                  <small>Camera view of the side of the submarine</small>
+                </div>
+                <div class="placeholder-media lightbox-trigger">
+                  <img src="./images/Second%20Game/concept_art/Sonar_view.png" alt="Sonar view concept art">
+                  <small>Sonar and environmental threat view</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="video-caption-block">
+              <h4>Early Gameplay Footage</h4>
+              <video class="project-video" controls playsinline preload="metadata">
+                <source src="./videos/Early_gameplay_in_too_deep.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
             </div>
 
             <div class="media-grid">
-              <div class="placeholder-media"><span>Image 1</span><small>Key Art / Splash Screen</small></div>
-              <div class="placeholder-media"><span>Image 2</span><small>Gameplay Shot</small></div>
-              <div class="placeholder-media"><span>Image 3</span><small>Enemy / Creature Design</small></div>
-              <div class="placeholder-media"><span>Image 4</span><small>Environment / Level Art</small></div>
+              <div class="placeholder-media lightbox-trigger">
+                <img src="./images/Second%20Game/Gameplay_whiteboard.jpg" alt="In Too Deep whiteboard concept art">
+                <small>Core gameplay ideas were workshopped on the whiteboard</small>
+              </div>
+              <div class="placeholder-media lightbox-trigger">
+                <img class="unity-dev-shot" src="./images/Second%20Game/Unity_dev_screenshot.PNG" alt="In Too Deep Unity development screenshot">
+                <small>Unity development screenshot showing the submarine's interior layout</small>
+              </div>
+              <div class="placeholder-media lightbox-trigger">
+                <img src="./images/Second%20Game/Monster_blender.jpg" alt="In Too Deep monster concept art">
+                <small>Modelling of the monster in Blender</small>
+              </div>
+              <div class="placeholder-media lightbox-trigger">
+                <img src="./images/Second%20Game/Monster_ingame.jpg" alt="In Too Deep monster in game render">
+                <small>In-game render of the monster within the environment</small>
+              </div>
             </div>
 
             <p>
@@ -224,10 +258,16 @@
     &copy; 2027 Jackson Valeriote. All rights reserved.
   </footer>
 
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close image">×</button>
+    <img id="lightbox-image" src="" alt="Expanded project image">
+  </div>
+
   <script src="./Scripts/Carousel.js"></script>
   <script src="./Scripts/Animation.js"></script>
   <script src="./Scripts/Wander.js"></script>
   <script src="./Scripts/Audio.js"></script>
   <script src="./Scripts/ProjectNav.js"></script>
+  <script src="./Scripts/Lightbox.js"></script>
 </body>
 </html>
