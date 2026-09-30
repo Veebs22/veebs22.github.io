@@ -475,6 +475,12 @@ footer {
   display: none;
 }
 
+.qoth-walkcycle {
+  width: min(260px, 65vw);
+  height: min(260px, 65vw);
+  margin: 0 auto 1.25rem;
+}
+
 .wander-box {
   position: relative;
   width: 80%;
